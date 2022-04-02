@@ -15,12 +15,16 @@ function Giphy() {
 					limit: 25,
 				}
 			})
-			setGiphy(results)
+			setGiphy(results.data.data)
 		}catch(e) {
 			console.log(e)
 		}
 	}
 
+	useEffect ( () => {
+		getGiphy()
+	}, [])
+	console.log(giphy)
 	return(
 		<div>
 			<h1>This is the Giphy Component</h1>
