@@ -37,7 +37,10 @@ function Giphy() {
 	return(
 		<div>
 			<h1>This is the Giphy Component</h1>
-			{showGiphy}
+			<br />
+			<div className='gif-container'>
+				{showGiphy}	
+			</div>
 		</div>
 	)
 }
