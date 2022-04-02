@@ -25,6 +25,7 @@ function Giphy() {
 		getGiphy()
 	}, [])
 	console.log(giphy)
+	
 	return(
 		<div>
 			<h1>This is the Giphy Component</h1>
