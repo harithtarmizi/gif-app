@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Giphy from './components/Giphy';
 
