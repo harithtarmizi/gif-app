@@ -25,10 +25,19 @@ function Giphy() {
 		getGiphy()
 	}, [])
 	console.log(giphy)
-	
+
+	let showGiphy = giphy.map((gif) => {
+		return(
+			<div key={gif.id} className='gif'>
+				<img src={gif.images.fixed_height.url} alt={gif.title} />
+			</div>
+		)
+	})
+
 	return(
 		<div>
 			<h1>This is the Giphy Component</h1>
+			{showGiphy}
 		</div>
 	)
 }
