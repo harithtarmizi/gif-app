@@ -24,3 +24,8 @@
 .gif {
   padding-top: 4px;
 }
+
+.gif-form {
+  display: flex;
+  justify-content: center;
+}
